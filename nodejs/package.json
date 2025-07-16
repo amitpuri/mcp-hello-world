@@ -1,0 +1,25 @@
+{
+  "name": "mcp-hello-world",
+  "version": "1.0.0",
+  "description": "Hello World MCP Server and Client",
+  "type": "module",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "node client/client.js",
+    "demo": "node client/client.js",
+    "test": "node tests/test-mcp.js",
+    "dev": "npm run demo"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "keywords": ["mcp", "hello-world", "model-context-protocol"],
+  "author": "Developer",
+  "license": "MIT"
+}

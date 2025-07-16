@@ -1,0 +1,9 @@
+# MCP Hello World Python Implementation
+
+# Core dependencies
+python-dotenv>=1.0.0  # For .env file support
+
+# Development dependencies (optional)
+# pytest>=7.0.0  # For advanced testing (if needed)
+# black>=22.0.0   # For code formatting (if needed)
+# mypy>=1.0.0     # For type checking (if needed)

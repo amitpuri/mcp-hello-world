@@ -1,0 +1,23 @@
+/**
+ * Shared types and constants for MCP Hello World project
+ */
+
+export const MODEL_PROVIDERS = {
+  CLAUDE: 'claude',
+  OPENAI: 'openai', 
+  LLAMA: 'llama'
+};
+
+export const HELLO_WORLD_SCENARIOS = {
+  SIMPLE: 'simple',
+  FORMAL: 'formal',
+  CREATIVE: 'creative',
+  TECHNICAL: 'technical'
+};
+
+export const DEFAULT_ROUTING_RULES = {
+  [HELLO_WORLD_SCENARIOS.SIMPLE]: MODEL_PROVIDERS.CLAUDE,
+  [HELLO_WORLD_SCENARIOS.FORMAL]: MODEL_PROVIDERS.OPENAI,
+  [HELLO_WORLD_SCENARIOS.CREATIVE]: MODEL_PROVIDERS.CLAUDE,
+  [HELLO_WORLD_SCENARIOS.TECHNICAL]: MODEL_PROVIDERS.LLAMA
+};
