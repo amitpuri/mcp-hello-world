@@ -7,7 +7,7 @@ A complete, working Model Context Protocol (MCP) implementation with proper proj
 This project has been restructured and tested to ensure everything works perfectly:
 
 ✅ **Fixed MCP Client** - Replaced broken MCP SDK client with robust JSON-RPC implementation  
-✅ **Ollama Integration** - Updated endpoint to work with local Ollama models  
+✅ **Simulated Model Routing** - Demonstrates model routing without actual API calls  
 ✅ **Clean Structure** - Organized code into logical folders with proper separation  
 ✅ **Comprehensive Testing** - Full test suite validates all functionality  
 ✅ **Complete Documentation** - Detailed usage examples and API reference  
@@ -33,10 +33,10 @@ nodejs/
 
 - **MCP Server**: Provides a `hello` tool with multiple greeting styles
 - **Working MCP Client**: Demonstrates proper server-client communication
-- **Smart Model Routing**: Automatically routes requests to different models based on style
-- **Ollama Integration**: Configured to work with local Ollama models
+- **Simulated Model Routing**: Demonstrates routing logic without actual API calls
 - **Multiple Styles**: Simple, formal, creative, and technical greetings
 - **Comprehensive Testing**: Full test suite validating all functionality
+- **Clean Configuration**: No unused API keys or endpoints required
 
 ## 🚀 Quick Start
 
@@ -118,18 +118,16 @@ You can override this by specifying a `model` parameter explicitly.
 The project uses environment variables for configuration. Copy `.env.example` to `.env` and customize:
 
 ```bash
-# Ollama endpoint (default: http://localhost:11434/v1)
-LLAMA_ENDPOINT=http://localhost:11434/v1
-
 # Server configuration
 MCP_SERVER_NAME=hello-world-server
 MCP_SERVER_VERSION=1.0.0
-DEFAULT_MODEL=claude
 ENABLE_MODEL_ROUTING=true
 MAX_NAME_LENGTH=50
 ENABLE_EMOJI=true
 DEFAULT_GREETING_STYLE=simple
 ```
+
+**Note**: This is a demo implementation that simulates model routing without making actual API calls. No API keys or endpoints are required.
 
 ## 🧪 Test Results
 

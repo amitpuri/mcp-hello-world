@@ -8,8 +8,8 @@ This Python implementation mirrors the Node.js version with all the same functio
 
 ✅ **Complete MCP Implementation** - Full JSON-RPC protocol handling with proper error management  
 ✅ **Multiple Greeting Styles** - Simple, formal, creative, and technical greetings  
-✅ **Smart Model Routing** - Automatically routes different styles to appropriate models  
-✅ **Ollama Integration Ready** - Configured for local model usage  
+✅ **Simulated Model Routing** - Demonstrates routing logic without actual API calls  
+✅ **Clean Configuration** - No unused API keys or endpoints required  
 ✅ **Comprehensive Testing** - Full test suite validates all functionality  
 ✅ **Clean Architecture** - Well-organized code with proper separation of concerns  
 ✅ **Minimal Dependencies** - Only python-dotenv for .env file support
@@ -35,7 +35,7 @@ python/
 
 - **MCP Server**: Provides a `hello` tool with multiple greeting styles
 - **Working MCP Client**: Demonstrates proper server-client communication
-- **Smart Model Routing**: Automatically routes requests to different models based on style
+- **Simulated Model Routing**: Demonstrates routing logic without actual API calls
 - **Multiple Styles**: Simple, formal, creative, and technical greetings
 - **Comprehensive Testing**: Full test suite validating all functionality
 - **Environment Configuration**: Customizable via environment variables
@@ -106,12 +106,12 @@ Configure the server behavior with environment variables (copy `.env.example` to
 |----------|---------|-------------|
 | `MCP_SERVER_NAME` | `hello-world-server` | Name of the MCP server |
 | `MCP_SERVER_VERSION` | `1.0.0` | Version of the MCP server |
-| `DEFAULT_MODEL` | `claude` | Default model to use |
-| `ENABLE_MODEL_ROUTING` | `true` | Enable automatic model routing |
+| `ENABLE_MODEL_ROUTING` | `true` | Enable simulated model routing |
 | `MAX_NAME_LENGTH` | `50` | Maximum length for names |
 | `ENABLE_EMOJI` | `true` | Enable emoji in creative greetings |
 | `DEFAULT_GREETING_STYLE` | `simple` | Default greeting style |
-| `LLAMA_ENDPOINT` | `http://localhost:11434/v1` | Ollama endpoint URL |
+
+**Note**: This is a demo implementation that simulates model routing without making actual API calls. No API keys or endpoints are required.
 
 ## 🧪 Test Results
 

@@ -10,8 +10,8 @@ Both implementations are complete, tested, and ready for use:
 ✅ **Consistent File Naming** - `client.js/py` and `server.js/py` across both implementations  
 ✅ **Complete MCP Protocol** - Full JSON-RPC handling with proper error management  
 ✅ **Multiple Greeting Styles** - Simple, formal, creative, and technical greetings  
-✅ **Smart Model Routing** - Automatically routes different styles to appropriate models  
-✅ **Ollama Integration** - Configured to work with local Ollama models  
+✅ **Simulated Model Routing** - Demonstrates model routing logic without actual API calls  
+✅ **Clean Configuration** - No unused API keys or endpoints  
 ✅ **Comprehensive Testing** - Full test suites validate all functionality  
 ✅ **Zero Setup Required** - Python uses standard library, Node.js has minimal dependencies
 
@@ -74,12 +74,12 @@ Both implementations provide identical functionality:
 
 - **MCP Server**: Provides a `hello` tool with multiple greeting styles
 - **Working MCP Client**: Demonstrates proper server-client communication
-- **Smart Model Routing**: Automatically routes requests to different models based on style
+- **Simulated Model Routing**: Demonstrates model routing logic without actual API calls
 - **Multiple Styles**: Simple, formal, creative, and technical greetings
 - **Comprehensive Testing**: Full test suites validating all functionality
 - **Environment Configuration**: Customizable via environment variables
 - **Error Handling**: Robust error handling with proper JSON-RPC error responses
-- **Ollama Integration**: Ready to work with local Ollama models
+- **Demo Implementation**: Perfect for learning MCP protocol without API dependencies
 
 ## 🎭 Greeting Styles
 
@@ -198,12 +198,12 @@ Both implementations support the same environment variables:
 |----------|---------|-------------|
 | `MCP_SERVER_NAME` | `hello-world-server` | Name of the MCP server |
 | `MCP_SERVER_VERSION` | `1.0.0` | Version of the MCP server |
-| `DEFAULT_MODEL` | `claude` | Default model to use |
-| `ENABLE_MODEL_ROUTING` | `true` | Enable automatic model routing |
+| `ENABLE_MODEL_ROUTING` | `true` | Enable simulated model routing |
 | `MAX_NAME_LENGTH` | `50` | Maximum length for names |
 | `ENABLE_EMOJI` | `true` | Enable emoji in creative greetings |
 | `DEFAULT_GREETING_STYLE` | `simple` | Default greeting style |
-| `LLAMA_ENDPOINT` | `http://localhost:11434/v1` | Ollama endpoint URL |
+
+**Note**: This is a demo implementation that simulates model routing without making actual API calls. No API keys or endpoints are required.
 
 ## 🤝 Contributing
 
