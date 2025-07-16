@@ -17,7 +17,6 @@ class HelloWorldServer {
     this.config = {
       name: process.env.MCP_SERVER_NAME || 'hello-world-server',
       version: process.env.MCP_SERVER_VERSION || '1.0.0',
-      defaultModel: process.env.DEFAULT_MODEL || 'claude',
       enableModelRouting: process.env.ENABLE_MODEL_ROUTING !== 'false',
       maxNameLength: parseInt(process.env.MAX_NAME_LENGTH) || 50,
       enableEmoji: process.env.ENABLE_EMOJI !== 'false',
@@ -90,7 +89,7 @@ class HelloWorldServer {
     const { name = 'World', style = 'simple', model } = args;
     
     // Determine which model to use
-    const selectedModel = model || DEFAULT_ROUTING_RULES[style] || 'claude';
+    const selectedModel = model || DEFAULT_ROUTING_RULES[style];
     
     // Generate message based on style
     const message = this.generateMessage(name, style);

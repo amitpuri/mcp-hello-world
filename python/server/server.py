@@ -41,7 +41,6 @@ class HelloWorldServer:
         self.config = {
             'name': os.getenv('MCP_SERVER_NAME', 'hello-world-server'),
             'version': os.getenv('MCP_SERVER_VERSION', '1.0.0'),
-            'default_model': os.getenv('DEFAULT_MODEL', ModelProvider.CLAUDE.value),
             'enable_model_routing': os.getenv('ENABLE_MODEL_ROUTING', 'true').lower() != 'false',
             'max_name_length': int(os.getenv('MAX_NAME_LENGTH', '50')),
             'enable_emoji': os.getenv('ENABLE_EMOJI', 'true').lower() != 'false',
@@ -145,9 +144,7 @@ class HelloWorldServer:
             selected_model = model
             routing_applied = False
         else:
-            selected_model = DEFAULT_ROUTING_RULES.get(
-                style_enum, self.config['default_model']
-            )
+            selected_model = DEFAULT_ROUTING_RULES.get(style_enum)
             routing_applied = True
         
         # Generate message
