@@ -1,3 +1,6 @@
+![AI Generated](https://img.shields.io/badge/AI-Generated-blueviolet?style=for-the-badge&logo=openai&logoColor=white) 
+### from Kiro - Claude Sonnet 4.0
+
 # MCP Hello World - Complete Real & Simulated Implementations
 
 A comprehensive Model Context Protocol (MCP) implementation showcase with both **simulated examples** for learning and **production-ready real implementations** with actual AI model integrations (Ollama, Claude, GPT-4).
