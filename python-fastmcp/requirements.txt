@@ -1,0 +1,20 @@
+# Real Models FastMCP Python Implementation
+
+# FastMCP framework
+fastmcp>=0.1.0              # FastMCP framework for modern MCP servers
+# Note: If fastmcp is not available, you can use mcp>=1.0.0 as fallback
+
+# Core dependencies
+python-dotenv>=1.0.0        # Environment configuration
+httpx>=0.25.0               # HTTP client for API calls
+pydantic>=2.0.0             # Data validation and settings
+
+# Model provider SDKs
+anthropic>=0.27.0           # Claude API client
+openai>=1.3.0               # OpenAI API client
+
+# Development dependencies (optional)
+pytest>=7.0.0               # Testing framework
+pytest-asyncio>=0.21.0      # Async testing support
+black>=22.0.0               # Code formatting
+mypy>=1.0.0                 # Type checking

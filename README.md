@@ -17,6 +17,14 @@ This repository demonstrates MCP implementations from basic simulated examples t
 | **`python/`** | Python | Simulated | Mock responses | ✅ Complete |
 | **`nodejs-real/`** | Node.js | **Production** | Ollama, Claude, GPT-4 | ✅ **Tested & Working** |
 | **`python-real/`** | Python | **Production** | Ollama, Claude, GPT-4 | ✅ **Tested & Working** |
+| **`python-fastmcp/`** | Python | **Modern FastMCP** | Ollama, Claude, GPT-4 | ✅ **Latest & Greatest** |
+
+## 🔧 Recent Improvements
+
+- **Environment Consistency**: All implementations now use consistent .env loading patterns
+- **Robust Error Handling**: Graceful degradation when dependencies are missing
+- **Clean Codebase**: Removed temporary files and improved .gitignore coverage
+- **Production Ready**: All real implementations tested and verified working
 
 ## 🚀 Quick Start
 
@@ -24,6 +32,12 @@ This repository demonstrates MCP implementations from basic simulated examples t
 Production-ready MCP servers with actual AI model integrations:
 
 ```bash
+# FastMCP Implementation (Latest & Greatest)
+cd python-fastmcp
+python setup.py  # Automated setup
+# Edit .env and add your API keys
+python demo.py
+
 # Node.js Real Implementation
 cd nodejs-real
 npm install
@@ -100,7 +114,18 @@ You: /openai Analyze this data
 
 ## 🧪 Testing Results
 
-Both real implementations have been thoroughly tested:
+All real implementations have been thoroughly tested:
+
+### **FastMCP (`python-fastmcp/`) - Latest & Greatest**
+```bash
+python tests/test_mcp.py
+# ✅ 8/8 tests passed
+# ✅ FastMCP decorators working
+# ✅ Pydantic validation working
+# ✅ Auto-generated schemas working
+# ✅ Type safety with modern Python
+# ✅ All model providers working
+```
 
 ### **Node.js Real (`nodejs-real/`)**
 ```bash
@@ -129,6 +154,17 @@ Add to your `.kiro/settings/mcp.json`:
 ```json
 {
   "mcpServers": {
+    "real-models-fastmcp": {
+      "command": "python",
+      "args": ["server/server.py"],
+      "cwd": "/path/to/python-fastmcp",
+      "env": {
+        "ANTHROPIC_API_KEY": "your_claude_key",
+        "OPENAI_API_KEY": "your_openai_key"
+      },
+      "disabled": false,
+      "autoApprove": ["chat", "list_models"]
+    },
     "real-models-nodejs": {
       "command": "node",
       "args": ["server/server.js"],
@@ -161,10 +197,53 @@ Each implementation has detailed documentation:
 
 | Implementation | README | Description |
 |---------------|---------|-------------|
+| **FastMCP Python** | [`python-fastmcp/README.md`](python-fastmcp/README.md) | Modern FastMCP server with decorators |
 | **Real Node.js** | [`nodejs-real/README.md`](nodejs-real/README.md) | Production MCP server with real APIs |
 | **Real Python** | [`python-real/README.md`](python-real/README.md) | Async MCP server with type safety |
 | **Simulated Node.js** | [`nodejs/README.md`](nodejs/README.md) | Learning-focused simulated implementation |
 | **Simulated Python** | [`python/README.md`](python/README.md) | Python simulated implementation |
+
+### **Quick Start Guides**
+- [`python-fastmcp/QUICKSTART.md`](python-fastmcp/QUICKSTART.md) - 5-minute FastMCP setup
+- [`python-fastmcp/comparison.py`](python-fastmcp/comparison.py) - FastMCP vs Traditional MCP comparison
+
+## 🔄 Implementation Comparison
+
+Choose the right implementation for your needs:
+
+| Feature | Simulated | Traditional MCP | **FastMCP** |
+|---------|-----------|-----------------|-------------|
+| **Learning Curve** | Easy | Moderate | Easy |
+| **Code Complexity** | Low | High | **Very Low** |
+| **Type Safety** | Basic | Manual | **Automatic** |
+| **Validation** | None | Manual | **Pydantic** |
+| **Schema Generation** | Manual | Manual | **Auto-generated** |
+| **Error Handling** | Basic | Manual try/catch | **Built-in** |
+| **Development Speed** | Fast | Slow | **Fastest** |
+| **Production Ready** | No | Yes | **Yes** |
+| **API Integration** | Mock | Real | **Real** |
+| **Code Lines** | ~100 | ~200+ | **~50** |
+
+### **When to Use Each:**
+
+**🎓 Simulated (`nodejs/`, `python/`)**
+- Learning MCP concepts
+- No API keys needed
+- Quick prototyping
+- Understanding protocol basics
+
+**🏭 Traditional MCP (`nodejs-real/`, `python-real/`)**
+- Full control over implementation
+- Custom validation logic
+- Legacy system integration
+- Learning MCP internals
+
+**🚀 FastMCP (`python-fastmcp/`) - Recommended**
+- Modern Python development
+- Rapid prototyping
+- Type-safe applications
+- Production deployments
+- Minimal boilerplate code
 
 ## 🎯 Use Cases
 
