@@ -1,4 +1,5 @@
 ![AI Generated](https://img.shields.io/badge/AI-Generated-blueviolet?style=for-the-badge&logo=openai&logoColor=white) 
+
 ### from Kiro - Claude Sonnet 4.0
 
 # MCP Hello World - Complete Real & Simulated Implementations
@@ -331,3 +332,5 @@ MIT License - Use these implementations as foundations for your own MCP projects
 - **Building production apps?** Use the real implementations (`nodejs-real/` or `python-real/`)
 
 Both real implementations have been tested and are production-ready! 🚀
+
+![MCP](https://avatars.githubusercontent.com/u/182288589?s=200&v=4%20source:)
