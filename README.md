@@ -1,6 +1,4 @@
-![AI Generated](https://img.shields.io/badge/AI-Generated-blueviolet?style=for-the-badge&logo=openai&logoColor=white) 
-
-### from Kiro - Claude Sonnet 4.0
+![AI Generated](https://img.shields.io/badge/AI-Generated-blueviolet?style=for-the-badge&logo=openai&logoColor=white)  using Kiro - Claude Sonnet 4.0
 
 # MCP Hello World - Complete Real & Simulated Implementations
 
