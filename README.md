@@ -333,4 +333,4 @@ MIT License - Use these implementations as foundations for your own MCP projects
 
 Both real implementations have been tested and are production-ready! 🚀
 
-![MCP](https://avatars.githubusercontent.com/u/182288589?s=200&v=4%20source:)
+![MCP](https://avatars.githubusercontent.com/u/182288589?s=200&v=4%20source:)(https://openagi.news/mcp)
